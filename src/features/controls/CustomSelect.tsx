@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import Select, { Props } from "react-select"
+import Select, { CSSObjectWithLabel, GroupBase, OptionProps, Props } from "react-select"
 import { Region } from "types"
 
 export type CountryOption =
@@ -16,7 +16,7 @@ const MySelect = (props: Props<CountryOption, false>) => {
 
 export const CustomSelect = styled(MySelect).attrs({
 	styles: {
-		control: provided => ({
+		control: (provided: CSSObjectWithLabel) => ({
 			...provided,
 			backgroundColor: "var(--colors-ui-base)",
 			color: "var(--colors-text)",
@@ -26,7 +26,7 @@ export const CustomSelect = styled(MySelect).attrs({
 			boxShadow: "var(--shadow)",
 			height: "50px",
 		}),
-		option: (provided, state) => ({
+		option: (provided: CSSObjectWithLabel, state: OptionProps<CountryOption, false, GroupBase<CountryOption>>) => ({
 			...provided,
 			cursor: "pointer",
 			color: "var(--colors-text)",
