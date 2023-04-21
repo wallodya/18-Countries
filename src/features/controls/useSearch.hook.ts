@@ -1,8 +1,8 @@
 import { ChangeEventHandler } from "react"
-import { useSelector, useDispatch } from "react-redux"
+import { useSelector } from "react-redux"
 import { useAppDispatch } from "store"
-import { selectSearch } from "./control-selectors"
-import { setSearch } from "./controls-slice"
+import { selectSearch } from "./control.selector"
+import { setSearch } from "./controls.slice"
 
 export type OnSearch = ChangeEventHandler<HTMLInputElement>
 

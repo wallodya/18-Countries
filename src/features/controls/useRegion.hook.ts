@@ -1,10 +1,10 @@
-import { useSelector, useDispatch } from "react-redux"
+import { useSelector } from "react-redux"
 import { SingleValue } from "react-select"
 import { useAppDispatch } from "store"
 import { Region } from "types"
-import { selectRegion } from "./control-selectors"
+import { selectRegion } from "./control.selector"
 
-import { setRegion } from "./controls-slice"
+import { setRegion } from "./controls.slice"
 import { CountryOption } from "./CustomSelect"
 
 type OnSelect = (reg: SingleValue<CountryOption>) => void

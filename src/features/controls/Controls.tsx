@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 import { Search } from "./Search"
 import { CustomSelect } from "./CustomSelect"
-import { useRegion } from "./use-region"
+import { useRegion } from "./useRegion.hook"
 import { Region } from "types"
 
 type RegionOptions = {

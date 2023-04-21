@@ -1,6 +1,6 @@
 import { NavigateFunction } from 'react-router-dom';
 import { Info } from './Info';
-import { useDetails } from './use-details';
+import { useDetails } from './useDetails.hook';
 
 interface CountryDetailsProps {
     name: string | undefined

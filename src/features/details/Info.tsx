@@ -1,7 +1,7 @@
 import { NavigateFunction } from "react-router-dom"
 import styled from "styled-components"
 import { Country } from "types"
-import { useNeighbors } from "./use-neighbors"
+import { useNeighbors } from "./useNeighbors.hook"
 
 interface InfoProps extends Country {
 	push: NavigateFunction
